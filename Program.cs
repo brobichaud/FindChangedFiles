@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
@@ -14,17 +11,12 @@ namespace ConsoleApplication1
 			TimerElapsed();
 		}
 
-		/// <summary>
-		/// The scheduled timer elapsed, see if there is any work to do
-		/// </summary>
-		/// <remarks>Called on a ThreadPool thread</remarks>
 		private static void TimerElapsed()
 		{
 			try
 			{
-
 				// find all files not modified in the specified interval
-				var dir = new DirectoryInfo(@"C:\Users\brobichaud\Desktop\New folder");
+				var dir = new DirectoryInfo(@"C:\New-folder");
 				var age = DateTime.UtcNow.Subtract(TimeSpan.FromHours(22));
 				var files = dir.EnumerateFiles().Where(file => file.LastWriteTimeUtc < age);
 				var count = files.Count();
@@ -34,7 +26,7 @@ namespace ConsoleApplication1
 				foreach (var file in files)
 				{
 					Console.WriteLine("Age: " + file.LastWriteTimeUtc);
-					MoveFile(file, @"C:\Users\brobichaud\Desktop\New folder\pipeline");
+					MoveFile(file, @"C:\New-folder\pipeline");
 				}
 			}
 			catch (Exception e)

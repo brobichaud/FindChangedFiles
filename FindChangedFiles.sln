@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempFindFiles", "TempFindFiles.csproj", "{0F95B1DA-A9A0-40CF-8BBB-E1BC42A23465}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindChangedFiles", "FindChangedFiles.csproj", "{0F95B1DA-A9A0-40CF-8BBB-E1BC42A23465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

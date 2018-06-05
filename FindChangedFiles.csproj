@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ConsoleApplication1</RootNamespace>
-    <AssemblyName>TempFindFiles</AssemblyName>
+    <AssemblyName>FindChangedFiles</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
